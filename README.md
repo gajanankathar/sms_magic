@@ -14,7 +14,7 @@ of recommendation system for ecommerce website.
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/sms_magic.git
+git clone https://github.com/gajanankathar/sms_magic.git
 cd sms_magic
 ```
 
