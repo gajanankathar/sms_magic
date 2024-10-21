@@ -58,8 +58,9 @@ sms_magic
 ├  ├── schemas.py   # Defines Pydantic schema for input validation and response model
 ├  ├── utils.py     # Defines utility functions
 ├  ├── api.py       # Contains the route definitions
-├
-├── main.py        # The main entry point of the application
+├  ├── test
+├     ├── api_test.py # Contains api unit test cases
+├── main.py          # The main entry point of the application
 ├── requirements.txt # Project dependencies
 ├── README.md        # Project documentation
 
@@ -67,7 +68,7 @@ sms_magic
 
 ## Example Usage
 
-To test the API, you can use curl or any API client like Postman:
+To test the API, you can use curl or any API client like Postman or using swagger UI:
 
 ```
 curl -X GET "http://127.0.0.1:8000/api/v1/users/1" -H "accept: application/json"
