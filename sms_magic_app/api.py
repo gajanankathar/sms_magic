@@ -77,7 +77,7 @@ async def add_user(user_details: User = Body(...)):
     return user_details
 
 
-@user_route.get("/users")
+@user_route.get("/users", response_model=List[UserResponse])
 async def get_all_users():
     """
     Get all users route to returns all users from DB.
@@ -85,7 +85,7 @@ async def get_all_users():
     return DB["users"]
 
 
-@user_route.get("/users/{user_id}")
+@user_route.get("/users/{user_id}", response_model=UserResponse)
 async def get_user(user_id: int = Path(..., title="Id of the user")):
     """
     Get user route to returns user for the given user ID.
